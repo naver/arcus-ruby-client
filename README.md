@@ -24,7 +24,7 @@ Just import arcus.rb and arcus_mc_node.rb
 test.rb is basic functional test for this driver and you can get detail information about that.
 
 Visit arcus cache clout project at github to get more detail information.
-https://github.com/naver/arcus-cache-cloud
+https://github.com/naver/arcus
 
 
 ## License
