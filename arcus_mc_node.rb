@@ -245,13 +245,8 @@ class ArcusMCNode
 		return self._set("replace", key, val, exptime)
 	end
 
-	def delete(key, exptime=0)
-		if exptime != nil and exptime != 0
-			full_cmd = "delete %s %d" % [key, exptime]
-		else
-			full_cmd = "delete %s" % key
-		end
-
+	def delete(key)
+		full_cmd = "delete %s" % key
 		return self.add_op("delete", full_cmd, method(:_recv_delete))
 	end
 
